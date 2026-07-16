@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Credproof — one platform to issue, hold, and verify digital credentials worldwide.">
+  <title>Credproof — Digital Credentials, Made Simple</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/credproof-logo.png" type="image/png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="sr-only" href="#main">Skip to content</a>
+
+  <div class="ambient" aria-hidden="true">
+    <div class="cursor-glow" id="cursor-glow"></div>
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+    <span class="orb orb-4"></span>
+    <div class="bg-mesh"></div>
+  </div>
+
+  <header class="site-header" id="site-header">
+    <div class="header-shell glass">
+      <a href="#top" class="brand" aria-label="Credproof home">
+        <img class="brand-mark" src="assets/credproof-logo.png" width="28" height="28" alt="">
+        <span>Credproof</span>
+      </a>
+
+      <nav class="nav-desktop" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#platform">Platform</a>
+        <a href="#use-cases">Use cases</a>
+        <a href="#trust">Trust</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#footer-cta" class="btn btn-primary btn-sm">Book a demo</a>
+        <button class="nav-mobile-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+          <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobile-nav" hidden>
+    <nav aria-label="Mobile">
+      <a href="#about">About</a>
+      <a href="#platform">Platform</a>
+      <a href="#use-cases">Use cases</a>
+      <a href="#trust">Trust</a>
+    </nav>
+    <a href="#footer-cta" class="btn btn-primary">Book a demo</a>
+  </div>
+
+  <main id="main">
+    <section id="top" class="hero">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <h1 class="hero-title" aria-label="One platform. Trusted digital credentials.">
+          <span class="type-line" id="type-line-1"></span>
+          <span class="type-line" id="type-line-2"></span>
+        </h1>
+        <p class="hero-sub reveal">
+          Credproof is the platform institutions use to issue, hold, and verify
+          digital credentials — without locking people into one system.
+        </p>
+        <div class="hero-actions reveal">
+          <a href="#footer-cta" class="btn btn-primary btn-glow">Book a demo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- What is Credproof -->
+    <section id="about" class="section about">
+      <div class="container about-grid">
+        <div class="about-copy reveal">
+          <p class="eyebrow">What is Credproof</p>
+          <h2 class="section-title">Digital credentials, without the lock-in</h2>
+          <p>
+            Credproof is infrastructure for verifiable credentials. Universities, banks,
+            employers, and platforms use it to issue trusted proofs that people keep in
+            their own wallets — then reuse across partners when they choose to share.
+          </p>
+          <p>
+            You get the outcomes that matter to operators and investors: fewer repeat checks,
+            less paperwork, stronger privacy, and a path that scales across use cases.
+          </p>
+        </div>
+        <ul class="about-points glass reveal">
+          <li>
+            <strong>Issue once</strong>
+            <span>Create a credential that travels with the holder.</span>
+          </li>
+          <li>
+            <strong>Hold privately</strong>
+            <span>Data stays with the person, not trapped in your database.</span>
+          </li>
+          <li>
+            <strong>Verify fast</strong>
+            <span>Partners check only what they need — in seconds.</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Platform — unique journey rail -->
+    <section id="platform" class="section platform">
+      <div class="container">
+        <h2 class="section-title centered reveal">Keep the complexity hidden</h2>
+        <p class="section-lead centered reveal">
+          One quiet path from issue to verify. Your teams see outcomes —
+          Credproof runs the hard parts underneath.
+        </p>
+
+        <div class="journey glass reveal" id="journey">
+          <div class="panel-shine" aria-hidden="true"></div>
+
+          <div class="journey-rail" aria-hidden="true">
+            <svg class="journey-path" viewBox="0 0 1000 120" preserveAspectRatio="none">
+              <path class="journey-path-track" d="M40 60 C 200 20, 300 100, 480 60 S 760 20, 960 60"/>
+              <path class="journey-path-glow" d="M40 60 C 200 20, 300 100, 480 60 S 760 20, 960 60"/>
+            </svg>
+            <span class="journey-bead" id="journey-bead"></span>
+          </div>
+
+          <div class="journey-stations" id="journey-stations" role="tablist" aria-label="How Credproof works">
+            <button class="journey-station is-active" type="button" role="tab" aria-selected="true" data-step="0">
+              <span class="station-num">01</span>
+              <strong>Issue</strong>
+              <p>Create a credential once. It travels with the person.</p>
+            </button>
+            <button class="journey-station" type="button" role="tab" aria-selected="false" data-step="1">
+              <span class="station-num">02</span>
+              <strong>Hold</strong>
+              <p>Stored in their wallet — not trapped in your systems.</p>
+            </button>
+            <button class="journey-station" type="button" role="tab" aria-selected="false" data-step="2">
+              <span class="station-num">03</span>
+              <strong>Verify</strong>
+              <p>Trusted in seconds. No paperwork chase required.</p>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Use cases — curved coverflow -->
+    <section id="use-cases" class="section use-cases">
+      <div class="container">
+        <h2 class="section-title centered reveal">Where Credproof fits</h2>
+        <p class="section-lead centered reveal">Real outcomes for institutions that need trust at scale.</p>
+      </div>
+
+      <div class="coverflow reveal" id="coverflow" aria-label="Use cases carousel">
+        <div class="coverflow-viewport">
+          <div class="coverflow-track" id="coverflow-track">
+            <article class="cover-card" data-tone="edu">
+              <div class="cover-media"></div>
+              <div class="cover-body">
+                <span class="cover-tag">Education</span>
+                <h3>Digital diplomas</h3>
+                <p>Students share verified degrees with employers instantly.</p>
+              </div>
+            </article>
+            <article class="cover-card" data-tone="fin">
+              <div class="cover-media"></div>
+              <div class="cover-body">
+                <span class="cover-tag">Finance</span>
+                <h3>Reusable KYC</h3>
+                <p>Onboard once. Reuse trust across products and partners.</p>
+              </div>
+            </article>
+            <article class="cover-card" data-tone="work">
+              <div class="cover-media"></div>
+              <div class="cover-body">
+                <span class="cover-tag">Workforce</span>
+                <h3>Skills &amp; roles</h3>
+                <p>Prove employment and certifications without paper trails.</p>
+              </div>
+            </article>
+            <article class="cover-card" data-tone="access">
+              <div class="cover-media"></div>
+              <div class="cover-body">
+                <span class="cover-tag">Access</span>
+                <h3>Age &amp; membership</h3>
+                <p>Confirm eligibility at the door — privacy intact.</p>
+              </div>
+            </article>
+            <article class="cover-card" data-tone="license">
+              <div class="cover-media"></div>
+              <div class="cover-body">
+                <span class="cover-tag">Licensing</span>
+                <h3>Professional licenses</h3>
+                <p>Always-current status for boards, firms, and auditors.</p>
+              </div>
+            </article>
+            <article class="cover-card" data-tone="border">
+              <div class="cover-media"></div>
+              <div class="cover-body">
+                <span class="cover-tag">Cross-border</span>
+                <h3>Portable identity</h3>
+                <p>Credentials that travel with people, not systems.</p>
+              </div>
+            </article>
+          </div>
+          <div class="coverflow-reflection" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust -->
+    <section id="trust" class="section trust">
+      <div class="container">
+        <div class="trust-head reveal">
+          <h2 class="section-title">Trust is infrastructure</h2>
+          <p class="section-lead">
+            Designed for regulated environments — privacy, consent, and accountability first.
+          </p>
+        </div>
+
+        <div class="trust-board glass reveal">
+          <div class="panel-shine" aria-hidden="true"></div>
+          <div class="trust-row">
+            <span class="trust-index">01</span>
+            <div class="trust-copy">
+              <h3>Privacy by default</h3>
+              <p>Share only what’s needed. Profiles stay with the person — not in another silo.</p>
+            </div>
+          </div>
+          <div class="trust-row">
+            <span class="trust-index">02</span>
+            <div class="trust-copy">
+              <h3>PIPEDA-aligned</h3>
+              <p>Clear purpose, meaningful consent, and a designated Privacy Officer.</p>
+            </div>
+          </div>
+          <div class="trust-row">
+            <span class="trust-index">03</span>
+            <div class="trust-copy">
+              <h3>Reliable under load</h3>
+              <p>Verification that stays fast when demand spikes — with status you can monitor.</p>
+            </div>
+          </div>
+          <div class="trust-row">
+            <span class="trust-index">04</span>
+            <div class="trust-copy">
+              <h3>Open standards</h3>
+              <p>Built for longevity so you’re never trapped in a closed stack.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section id="footer-cta" class="section final-cta">
+      <div class="container">
+        <div class="final-cta-band reveal">
+          <div class="final-cta-copy">
+            <h2>Less paperwork. More confidence.</h2>
+            <p>
+              Credproof replaces slow, repeated checks with credentials people already hold.
+              Talk through your market, partners, and first use case with our team.
+            </p>
+          </div>
+          <a href="mailto:demo@credproof.io" class="btn btn-primary btn-glow">Book a demo</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a href="#top" class="brand" aria-label="Credproof home">
+            <img class="brand-mark" src="assets/credproof-logo.png" width="28" height="28" alt="">
+            <span>Credproof</span>
+          </a>
+          <p>Digital credential infrastructure for institutions that need trust at scale.</p>
+        </div>
+        <div class="footer-cols">
+          <div>
+            <h4>Product</h4>
+            <a href="#about">About</a>
+            <a href="#platform">Platform</a>
+            <a href="#use-cases">Use cases</a>
+            <a href="#trust">Trust</a>
+          </div>
+          <div>
+            <h4>Company</h4>
+            <a href="mailto:hello@credproof.io">Contact</a>
+            <a href="mailto:demo@credproof.io">Book a demo</a>
+          </div>
+          <div>
+            <h4>Legal</h4>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="privacy.html#pipeda">PIPEDA</a>
+            <a href="privacy.html#terms">Terms of Use</a>
+            <a href="privacy.html#cookies">Cookie Notice</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Credproof Inc.</span>
+        <a href="mailto:privacy@credproof.io">Privacy Officer</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
